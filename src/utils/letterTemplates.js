@@ -3,7 +3,7 @@
 +
  export const letterTemplates = {
 -  offer: `[COMPANY LETTERHEAD]
-+  offer: `${companyConfig.letterhead}
++  offer: \`${companyConfig.letterhead}
  
  Date: {{date}}
  
@@ -25,7 +25,7 @@
 +${companyConfig.name} | ${companyConfig.contact.website}`,
  
 -  completion: `[COMPANY LETTERHEAD]
-+  completion: `${companyConfig.letterhead}
++  completion: \`${companyConfig.letterhead}
  
  Date: {{date}}
  

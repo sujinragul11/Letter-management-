@@ -4,10 +4,12 @@
  // PDF generation simulation
 @@ .. @@
      const pdfData = {
+     }
 -      filename: `offer-letter-${internData.name.replace(/\s+/g, '-').toLowerCase()}.pdf`,
 +      filename: `${companyConfig.name.replace(/\s+/g, '-').toLowerCase()}-offer-letter-${internData.name.replace(/\s+/g, '-').toLowerCase()}.pdf`,
        content: letterContent,
        metadata: {
+       }
 -        title: 'Internship Offer Letter',
 -        author: 'HR Department',
 +        title: `Internship Offer Letter - ${companyConfig.name}`,
@@ -18,10 +20,12 @@
          createdAt: new Date().toISOString()
 @@ .. @@
      const pdfData = {
+     }
 -      filename: `completion-certificate-${internData.name.replace(/\s+/g, '-').toLowerCase()}.pdf`,
 +      filename: `${companyConfig.name.replace(/\s+/g, '-').toLowerCase()}-completion-certificate-${internData.name.replace(/\s+/g, '-').toLowerCase()}.pdf`,
        content: letterContent,
        metadata: {
+       }
 -        title: 'Internship Completion Certificate',
 -        author: 'HR Department',
 +        title: `Internship Completion Certificate - ${companyConfig.name}`,
